@@ -41,7 +41,7 @@ export function Navbar() {
                         TBS <span className="text-gold">Jewellers</span>
                     </span> */}
 
-                    <img src={isHomePage ? logo.src : logoPng.src} alt="" width={180} height={100} />
+                    <img src={(isScrolled || !isHomePage) ? logoPng.src : logo.src} alt="" width={180} height={100} />
                 </Link>
 
                 {/* Desktop Links */}
